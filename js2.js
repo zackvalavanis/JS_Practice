@@ -38,3 +38,17 @@ hashes.forEach( function (item){
 });
 
 console.log(newArray)
+
+// filter 
+
+var hashes = [ 
+  { name: 'chair', price: 100 }, 
+  { name: 'pencil', price: 1 },
+  { name: 'book', price: 4 }
+]
+
+var expensiveItems = hashes.filter ( function(item) { 
+  return item.price > 5;
+});
+
+console.log(expensiveItems)
