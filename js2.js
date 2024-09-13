@@ -18,3 +18,23 @@ while( i < hashes.length) {
   i += 1
 }
 console.log(new_array)
+
+
+// for Each method 
+
+
+var hashes = [ 
+  { name: 'chair', price: 100 }, 
+  { name: 'pencil', price: 1 },
+  { name: 'book', price: 4 }
+]
+
+var newArray = [];
+
+hashes.forEach( function (item){ 
+  if(item.price > 5) { 
+    newArray.push(item);
+  }
+});
+
+console.log(newArray)
